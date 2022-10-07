@@ -9,9 +9,31 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="medium">Calculadora sumadora</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+
+  <div class="container">
+
+    <ion-list>
+      <ion-item>
+        <ion-label id="sumando"></ion-label>
+        <ion-input id="num1" placeholder="primer numero"  type="number" [(ngModel)]="num1"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label></ion-label>
+        <ion-input id="num2" placeholder="segundo numero" type="number" [(ngModel)]="num2"></ion-input>
+      </ion-item>
+  
+      <ion-item class="container-label">
+        <ion-label>Resultado es: {{result}}</ion-label>
+      </ion-item>
+  
+    </ion-list>
+    
+    <ion-button (click)="sumador()">Sumar</ion-button>
+  </div>
 </ion-content>

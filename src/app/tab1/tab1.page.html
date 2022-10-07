@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Randy
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,22 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">{{name}}</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+  <ion-card>
+    <img  class="img" src="{{url}}"/>
+    <ion-card-header>
+      
+      <ion-card-title>Randy D. Baldayque</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Matricula: 2020-9826
+    </ion-card-content>
+    <ion-card-content>
+      Correo: 20209826@itla.edu.do
+    </ion-card-content>
+  </ion-card>
 </ion-content>

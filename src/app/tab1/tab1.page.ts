@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  public url: string = "assets/imagenes/img1.jpeg";
+  public name: string = "Usuario";
+  
   constructor() {}
 
 }

@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Randy
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="medium">Multiplicador</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-label></ion-label>
+    <ion-input id="num2" placeholder="Numero" type="number" [(ngModel)]="multi"></ion-input>
+  </ion-item>
+  <ion-button (click)="dameNumeroX()">Enter</ion-button>
+
+  <ion-list>
+    <ion-item *ngFor="let d of dataList">
+      <ion-label>{{d.valor}} {{d.operator}} {{d.seq}} : <strong> {{d.reultN}} : {{d.resultText}}</strong></ion-label>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
